@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("https://dummyjson.com/users");
     const data = await response.json();
-    // Use the first 10 users to form exactly 2 rows of 5 cards each.
     const users = data.users.slice(0, 10);
 
     users.forEach((user) => {
